@@ -7,6 +7,16 @@ reset
 *::after {
   box-sizing: border-box;
 }
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.1ms !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0ms !important;
+  }
+}
+
 /* ==========================
 Variables and global classes
 ============================== */
